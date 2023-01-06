@@ -92,7 +92,7 @@ module.exports = async function index(inputs, args) {
       e.name === 'NoSuchBucketError' ||
       e.message.includes('The bucket you access does not belong to you')
     ) {
-      throw new Error(`bucket: ${this.bucket} dose not exist in your account.`);
+      throw new Error(`bucket: ${ossBucket} dose not exist in your account.`);
     }
     throw e;
   }
