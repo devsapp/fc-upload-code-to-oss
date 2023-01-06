@@ -19,7 +19,9 @@
     "Function Compute"
   ],
   "scripts": {
-    "publish": "rm -rf node_modules && npm install --production && s cli registry publish"
+    "prepublish": "rm -rf node_modules && npm install --production",
+    "publish": "s cli registry publish",
+    "postpublish": "npm install"
   },
   "dependencies": {
     "ali-oss": "^6.17.1"

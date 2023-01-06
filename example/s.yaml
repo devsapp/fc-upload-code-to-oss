@@ -31,8 +31,8 @@ services:
         # - plugin: fc-upload-code-to-oss
         - plugin: ${path(..)}
           args:
-            ossBucket: serverless-devs-cn-hangzhou-oss-1740298130743624
-            clear: true
+            ossBucket: serverless-devs-cn-hangzhou-oss-1740298130743624 # 必须，因为要上传到指定 bucket
+            clear: true # 选填，会清理掉创建的本地目录
     props:
       region: cn-hangzhou
       service:
