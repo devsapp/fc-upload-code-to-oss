@@ -1,0 +1,10 @@
+Type: Plugin
+Name: fc-upload-code-to-oss
+Provider:
+  - 阿里云
+Version: 0.0.2
+Description: 上传文件到OSS
+HomePage: https://github.com/devsapp/fc-upload-code-to-oss
+Tags: #标签详情
+  - Serverless Devs
+Category: 其它
